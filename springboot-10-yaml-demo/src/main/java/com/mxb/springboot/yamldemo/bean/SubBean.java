@@ -1,5 +1,7 @@
 package com.mxb.springboot.yamldemo.bean;
 
+import java.util.Date;
+
 /**
  * @author Love
  */
@@ -8,6 +10,7 @@ public class SubBean {
     private int sfi;
     private boolean sfb;
     private String sfs;
+    private Date sfd;
 
     @Override
     public String toString() {
@@ -15,6 +18,7 @@ public class SubBean {
                 "sfi=" + sfi +
                 ", sfb=" + sfb +
                 ", sfs='" + sfs + '\'' +
+                ", sfd=" + sfd +
                 '}';
     }
 
@@ -40,5 +44,13 @@ public class SubBean {
 
     public void setSfs(String sfs) {
         this.sfs = sfs;
+    }
+
+    public Date getSfd() {
+        return sfd;
+    }
+
+    public void setSfd(Date sfd) {
+        this.sfd = sfd;
     }
 }

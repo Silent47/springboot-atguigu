@@ -6,6 +6,7 @@ test-bean:
     sfi: 1
     sfb: true
     sfs: "a\tb\nc"
+    sfd: 2019/12/27 19:25:14
   string-list: [a, b, c]
   string-map:
     aa: aa
