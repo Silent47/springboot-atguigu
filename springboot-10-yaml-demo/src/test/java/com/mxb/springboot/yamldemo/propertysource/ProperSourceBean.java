@@ -5,7 +5,7 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 @Component
-@PropertySource(value = {"classpath:test.yaml"})
+@PropertySource({"classpath:test.yaml"})
 @ConfigurationProperties("test")
 public class ProperSourceBean {
 
