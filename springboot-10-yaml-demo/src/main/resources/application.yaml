@@ -1,0 +1,22 @@
+test-bean:
+  field-int: 1
+  fieldBoolean: true
+  fieldString: 'a\tb\nc'
+  fieldObject:
+    sfi: 1
+    sfb: true
+    sfs: "a\tb\nc"
+  string-list: [a, b, c]
+  string-map:
+    aa: aa
+    bb: bb
+    cc: cc
+  field-list:
+    - sfs: ls1
+      sfi: 11
+      sfb: true
+    - {sfi: 22, sfs: "{22}"}
+    - sfs: '[33]'
+  filedMap:
+    aaa: {sfs: aaa}
+    '{[()]}': {sfi: 1234567}
