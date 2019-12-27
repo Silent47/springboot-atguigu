@@ -13,6 +13,9 @@ public class HelloController {
     @Value("${test-value}")
     private String string;
 
+    /**
+     * SpEL
+     */
     @Value("#{222 + 234}")
     private int value;
 
