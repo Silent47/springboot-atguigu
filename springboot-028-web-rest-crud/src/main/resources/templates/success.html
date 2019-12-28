@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <h1>success from html 22:30</h1>
+        <hr/>
+
+        <div th:text="${code}">abc</div>
+        <hr/>
+
+        <div th:text="${div}"></div>
+        <div th:utext="${div}"></div>
+        <hr/>
+
+        <span th:text="${e}" th:each="e: ${array}"></span>
+        <br/>
+        <span th:each="e: ${array}">
+            <span th:text="${e}"></span>
+        </span>
+        <hr/>
+
+        <span th:each="e: ${array}">[[${e}]]</span>
+        <br/>
+        <span th:each="e: ${array}">[(${e})]</span>
+        <hr/>
+    </body>
+</html>

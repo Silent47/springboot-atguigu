@@ -1,4 +1,4 @@
-package com.mxb.springboot.webrestcrud;
+package com.mxb.springboot.web.rest.crud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -30,6 +30,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * http://localhost:8080/application.txt
  * http://localhost:8080/meta-others.txt
  *
+ * @author Love
  */
 @SpringBootApplication
 public class WebRestCrudApplication {

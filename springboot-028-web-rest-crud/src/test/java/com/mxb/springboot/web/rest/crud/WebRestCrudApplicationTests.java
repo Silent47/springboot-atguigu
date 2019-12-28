@@ -1,4 +1,4 @@
-package com.mxb.springboot.webrestcrud;
+package com.mxb.springboot.web.rest.crud;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
