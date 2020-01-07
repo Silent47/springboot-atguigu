@@ -1,6 +1,5 @@
-package com.mxb.springboot.web.rest.crud.controller;
+package com.mxb.controller;
 
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -14,10 +13,11 @@ import java.util.Map;
 @Controller
 public class HelloController {
 
-    @RequestMapping({"/", "index.html"})
-    public String index() {
-        return "index";
-    }
+    // See @MvcConfigurer
+//    @RequestMapping({"/", "login.html"})
+//    public String index() {
+//        return "index";
+//    }
 
     @ResponseBody
     @RequestMapping("hello")
