@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>4xx</title>
+    </head>
+    <body>
+        <div>timestamp: [[${timestamp}]]</div>
+        <div>path: [[${path}]]</div>
+        <div>status: [[${status}]]</div>
+        <div>error: [[${error.class}]]</div>
+        <div>message: [[${message}]]</div>
+        <div>requestId: [[${requestId}]]</div>
+        <div>request: [[${#request}]]</div>
+        <div>response: [[${#response}]]</div>
+        <div>session : [[${#session}]]</div>
+        <div>locale: [[${#locale}]]</div>
+        <div>context: [[${#ctx.size}]]</div>
+        <div>servlet context: [[${#servletContext.class}]]</div>
+        <div th:text="${#vars}"></div>
+    </body>
+</html>
