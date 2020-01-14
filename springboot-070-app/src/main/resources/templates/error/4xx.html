@@ -13,10 +13,13 @@
         <div>requestId: [[${requestId}]]</div>
         <div>request: [[${#request}]]</div>
         <div>response: [[${#response}]]</div>
-        <div>session : [[${#session}]]</div>
-        <div>locale: [[${#locale}]]</div>
-        <div>context: [[${#ctx.size}]]</div>
+        <div>session: [[${#session==null} ? 'null' : ${session}]]</div>
         <div>servlet context: [[${#servletContext.class}]]</div>
-        <div th:text="${#vars}"></div>
+        <div>locale: [[${#locale}]]</div>
+        <div>context ['javax.servlet.forward.request_uri']: [[${#ctx['javax.servlet.forward.request_uri']}]]</div>
+        <div>
+            <span>vars ['javax.servlet.forward.request_uri']:</span>
+            <span th:text="${#vars['javax.servlet.forward.request_uri']}"></span>
+        </div>
     </body>
 </html>
