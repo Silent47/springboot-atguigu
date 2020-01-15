@@ -6,11 +6,15 @@ import org.slf4j.LoggerFactory;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
+/**
+ * @author Love
+ */
 @Service
 public class CacheServiceImpl implements ICacheService {
 
     private Logger logger = LoggerFactory.getLogger(CacheServiceImpl.class);
 
+    @Override
     @Cacheable(cacheNames = "fibonacci")
     public Integer compute(Integer arg) {
         logger.info("{} -> Computing: {}.", getClass(), arg);
